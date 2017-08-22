@@ -5,11 +5,18 @@
     <title></title>
   </head>
   <body>
-    <form action="http://analytics-eu.clickdimensions.com/forms/h/awnW8AqGNHEKD3uuzX52WV" method="post">
-    <input type="email" id="web_emailaddress" name="web_emailaddress" />
-    <input type="text" id="web_firstname" name="web_firstname" /> 
-    <input type="text" id="web_lastname" name="web_lastname" />
-	<button type="submit">Submit</button>
-	</form>
-  </body>
+  <form action="http://analytics-eu.clickdimensions.com/forms/h/awnW8AqGNHEKD3uuzX52WV" method="post">
+  <input type="email" id="web_emailaddress" name="web_emailaddress" /> 
+  <input type="text" id="web_firstname" name="web_firstname" /> 
+  <input type="text" id="web_lastname" name="web_lastname" /> 
+  <button type="submit">Submit</button></form>
+  <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"></script> 
+  <script type="text/javascript">
+        var cdAnalytics = new clickdimensions.Analytics(&#39;analytics-eu.clickdimensions.com&#39;);
+        cdAnalytics.setAccountKey(&#39;ax0pKuSe6BU6h2IKh1RiXA&#39;);
+        cdAnalytics.setDomain(&#39;github.io&#39;);
+        cdAnalytics.setScore(typeof (cdScore) == &quot;undefined&quot; ? 0 : (cdScore == 0 ? null : cdScore));
+        cdAnalytics.trackPage();
+  </script>
+</body>
 </html>
