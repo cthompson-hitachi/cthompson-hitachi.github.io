@@ -3194,6 +3194,12 @@ textarea.form__control {
     text-decoration: none;
 }
 
+.maxSize1 {
+	
+	Font-size: 0px;
+}
+
+
 .clickdform input[type='text'], .clickdform textarea, .clickdform select {
 
     display: block;
