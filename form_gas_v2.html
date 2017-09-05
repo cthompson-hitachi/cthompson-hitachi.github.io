@@ -138,9 +138,11 @@
 <input type="hidden" id="web_topic" name="web_topic" readonly value="Residential">
 <input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="gasholderslondon.com">
 <input type="hidden" id="web_dateadded" name="web_dateadded" value="">
+<input type="datetime" id="test_dateadded" name="test_dateadded" readonly>
  <script language="javascript">
  var today = new Date();
  document.write(today);
+ document.getElementById('date').value = today;
  </script>
 </div>
 </div>
