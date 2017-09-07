@@ -387,6 +387,7 @@
 <input type="hidden" id="web_leadtype" name="web_leadtype" readonly value="337290000">
 <input type="hidden" id="web_topic" name="web_topic" readonly value="Residential">
 <input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="gasholderslondon.com">
+<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="in">
 </div>
 </div>
 
@@ -395,7 +396,7 @@
 <div class="form__cell  layout__item  form__submit-holder">
 <p class="form__footnote">* Required</p>
 <p style="text-align: left;">
-<input id="web_globaloptout" name="web_globaloptout" type="checkbox" checked/>
+<input id="web_globaloptout" name="web_globaloptout" type="checkbox" checked onclick="changeValueCheckbox(this)" />
 
 
 
@@ -413,7 +414,15 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 </div>
 </section>
 </div>
-
+<script type="text/javascript">
+function changeValueCheckbox(element){
+   if(element.checked){
+    document.forms[0].web_globaloptouttext="in";
+  }else{
+    document.forms[0].web_globaloptouttext="out";
+  }
+}
+</script>
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
 <script type="text/javascript">
         var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com');
