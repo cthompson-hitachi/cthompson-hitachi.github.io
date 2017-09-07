@@ -147,15 +147,7 @@
 <p style="text-align: left;">
 <input id="web_globaloptin" name="web_globaloptin" type="checkbox" checked onclick="changeValueCheckbox(this)" />
 
-<script type="text/javascript">
-function changeValueCheckbox(element){
-   if(element.checked){
-    element.value='on';
-  }else{
-    element.value='off';
-  }
-}
-</script>
+
 
 We would like to email you in the future with information and offers that we feel you may be interested in about King’s Cross generally. Please uncheck this box if you object to receiving such information or offers.
 </p>
@@ -171,6 +163,17 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 </div>
 </section>
 </div>
+
+<script type="text/javascript">
+//change value of checkbox element
+function changeValueCheckbox(element){
+   if(element.checked){
+    element.value='on';
+  }else{
+    element.value='off';
+  }
+}
+</script>
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
 <script type="text/javascript">
         var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com');
