@@ -417,10 +417,11 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 <script type="text/javascript">
 function changeValueCheckbox(element){
    if(element.checked){
-    document.forms[0].web_globaloptouttext="in";
+    document.getElementById("web_globaloptouttext").value="in";
   }else{
-    document.forms[0].web_globaloptouttext="out";
+    document.getElementById("web_globaloptouttext").value="out";
   }
+  alert(document.getElementById("web_globaloptouttext").value);
 }
 </script>
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
