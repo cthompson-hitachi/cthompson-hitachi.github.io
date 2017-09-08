@@ -415,14 +415,14 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 </section>
 </div>
 <script type="text/javascript">
-function changeValueCheckbox(element){
-   if(element.checked){
-    document.getElementById("web_globaloptouttext").value="in";
-  }else{
-    document.getElementById("web_globaloptouttext").value="out";
-  }
-  alert(document.getElementById("web_globaloptouttext").value);
-}
+	function changeValueCheckbox(element){
+	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
+	   if(element.checked){
+		document.getElementById("web_globaloptouttext").value="in";
+	  }else{
+		document.getElementById("web_globaloptouttext").value="out";
+	  }
+	}
 </script>
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
 <script type="text/javascript">
