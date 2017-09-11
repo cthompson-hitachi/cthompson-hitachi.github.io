@@ -74,7 +74,7 @@
 <div class="layout__item  u-1/2-desk">
 <div class="[ form__cell  form__cell--desktop-margin ]">
 <label for="country" class="form__select-wrapper">
-<select class="form__control" id="web_country" name="web_country"  required>
+<select class="form__control" id="web_countrylist" name="web_countrylist" onchange="changeValueCountryList(this)" required>
 <option value>Country of residence *</option>
 <option value="United Kingdom">United Kingdom</option>
 <option value="Afghanistan">Afghanistan</option>
@@ -131,7 +131,7 @@
 <option value="Congo Democratic Rep">Congo Democratic Rep</option>
 <option value="Cook Islands">Cook Islands</option>
 <option value="Costa Rica">Costa Rica</option>
-<option value="Cote D&#x27;Ivoire">Cote D&#x27;Ivoire</option>
+<option value="Cote D&#x27;Ivoire">Cote D'Ivoire</option>
 <option value="Croatia">Croatia</option>
 <option value="Cuba">Cuba</option>
 <option value="Curacao">Curacao</option>
@@ -385,6 +385,7 @@
 </div>
 <div class="form__cell  layout__item  u-1/2-desk"><textarea class="form__control" id="web_comments" name="web_comments" cols="50" rows="7" placeholder="Comments"></textarea>
 <input type="hidden" id="web_leadtype" name="web_leadtype" readonly value="337290000">
+<input type="hidden" id="web_country" name="web_country">
 <input type="hidden" id="web_topic" name="web_topic" readonly value="Residential">
 <input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="gasholderslondon.com">
 <input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="in">
@@ -422,6 +423,11 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	  }else{
 		document.getElementById("web_globaloptouttext").value="out";
 	  }
+	}
+	function changeValueCountryList(element){
+	// Pushes current Country of Residence List value to a text field
+		document.getElementById("web_country").value=element.value;
+		alert(document.getElementById("web_country").value);
 	}
 </script>
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
