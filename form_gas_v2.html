@@ -40,7 +40,7 @@
 </div>
 <div class="form__row  layout">
 <div class="form__cell  layout__item  u-1/2-desk">
-<input type="email" class="form__control" id="web_emailaddress" name="web_emailaddress" placeholder="E-mail *" required/>
+<input type="email" class="form__control" id="initialEmail" name="initialEmail" placeholder="E-mail *" required onchange="changeEmailAddress(this)"/>
 </div>
 <div class="form__cell  layout__item  u-1/2-desk">
 <input type="email" class="form__control" id="confirmEmail" name="confirmEmail"  placeholder="Confirm e-mail *" required/>
@@ -389,6 +389,7 @@
 <input type="hidden" id="web_topic" name="web_topic" readonly value="Residential">
 <input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="gasholderslondon.com">
 <input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="in">
+<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
 </div>
 </div>
 
@@ -428,7 +429,13 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	// Pushes current Country of Residence List value to a text field
 		document.getElementById("web_country").value=element.value;
 	}
+	function changeEmailAddress(element){
+		document.getElementById("web_emailaddress").value = "-" + element.value;
+		alert(document.getElementById("web_emailaddress").value);
+	}
+	
 </script>
+
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
 <script type="text/javascript">
         var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com');
