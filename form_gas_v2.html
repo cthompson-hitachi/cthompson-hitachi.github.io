@@ -430,8 +430,8 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 		document.getElementById("web_country").value=element.value;
 	}
 	function changeEmailAddress(element){
+	// Prefix email address with "-" so Click Dimensions thinks its unique, plugin removes "-" once processing is complete to maintain what user input
 		document.getElementById("web_emailaddress").value = "-" + element.value;
-		alert(document.getElementById("web_emailaddress").value);
 	}
 	
 </script>

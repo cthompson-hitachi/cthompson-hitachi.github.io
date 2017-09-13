@@ -29,7 +29,7 @@
 </div>
 <div class="form__row  layout">
 <div class="form__cell  layout__item  u-1/2-desk">
-<input type="email" class="form__control" id="web_emailaddress" name="web_emailaddress" placeholder="E-mail *" required/>
+<input type="email" class="form__control" id="initialEmail" name="initialEmail" placeholder="E-mail *" required onchange="changeEmailAddress(element)"/>
 </div>
 <div class="form__cell  layout__item  u-1/2-desk">
 <input type="email" class="form__control" id="confirmEmail" name="confirmEmail"  placeholder="Confirm e-mail *" required/>
@@ -404,6 +404,10 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	function changeValueCountryList(element){
 	// Pushes current Country of Residence List value to a text field
 		document.getElementById("web_country").value=element.value;
+	}
+	function changeEmailAddress(element){
+	// Prefix email address with "-" so Click Dimensions thinks its unique, plugin removes "-" once processing is complete to maintain what user input
+		document.getElementById("web_emailaddress").value = "-" + element.value;
 	}
 </script>
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
