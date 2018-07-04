@@ -58,7 +58,7 @@
 		<input type="text" class="form__control" id="web_postalcode" name="web_postalcode" placeholder="Post/Zip code *" required/>
 	</div>
 	
-	<input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="artottenhamhale">
+	<input type="hidden" id="web_SourceCode" name="web_SourceCode" readonly value="artottenhamhale">
 	<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="out">
 	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
 
@@ -95,11 +95,6 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	  }else{
 		document.getElementById("web_globaloptouttext").value="out";
 	  }
-	}
-
-	function changeEmailAddress(element){
-	// Prefix email address with "-" so Click Dimensions thinks its unique, plugin removes "-" once processing is complete to maintain what user input
-		document.getElementById("web_emailaddress").value = "-" + element.value;
 	}
 </script>
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
