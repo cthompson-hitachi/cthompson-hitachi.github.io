@@ -71,12 +71,12 @@
 <div class="form__cell  layout__item  form__submit-holder">
 <p class="form__footnote">* Required</p>
 <p style="text-align: left;">
-<input id="web_ar_tottenhamhale" name="web_ar_tottenhamhale" type="checkbox" unchecked onclick="change_ar_tottenhamhale(this)" />
+<input id="chk_ar_tottenhamhale" name="chk_ar_tottenhamhale" type="checkbox" unchecked onclick="change_ar_tottenhamhale(this)" />
 
 We would like to email you in the future with information, offers, events and sales information that we feel you may be interested in about the Argent Related development at Tottenham Hale. Please check this box if you would like to receive such information.</p>
 <br><br>
 <p style="text-align: left;">
-<input id="web_ar_futureprojects" name="web_ar_futureprojects" type="checkbox" unchecked onclick="change_ar_futureprojects(this)" />
+<input id="chk_ar_futureprojects" name="chk_ar_futureprojects" type="checkbox" unchecked onclick="change_ar_futureprojects(this)" />
 Please check this box if you would like to hear more about other Argent Related projects.
 <br>
 <br>
@@ -97,6 +97,7 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
 	   if(element.checked){
 		document.getElementById("web_ar_tottenhamhale").value="in";
+		document.getElementById("web_globaloptouttext").value="in";
 	  }else{
 		document.getElementById("web_ar_tottenhamhale").value="out";
 	  }
@@ -106,6 +107,7 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
 	   if(element.checked){
 		document.getElementById("web_ar_futureprojects").value="in";
+		document.getElementById("web_globaloptouttext").value="in";
 	  }else{
 		document.getElementById("web_ar_futureprojects").value="out";
 	  }
