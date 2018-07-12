@@ -31,7 +31,7 @@
 
 <div class="form__row  layout">
 	<div class="form__cell  layout__item  u-1/2-desk">
-		<input type="email" id="initialEmail" name="initialEmail" placeholder="E-mail *" required onchange="changeEmailAddress(this)"/>
+		<input type="email" class="email_control" id="initialEmail" name="initialEmail" placeholder="E-mail *" required onchange="changeEmailAddress(this)"/>
 	</div>
 </div>
 
@@ -52,7 +52,7 @@
 <div class="form__cell  layout__item  form__submit-holder">
 <p class="form__footnote">* Required</p>
 <p style="text-align: left;">
-<input id="web_globaloptout" name="web_globaloptout" type="checkbox" unchecked onclick="changeValueCheckbox(this)" />
+<input id="web_globaloptout" name="web_globaloptout" type="checkbox" checked onclick="changeValueCheckbox(this)" />
 
 We would like to email you in the future with information and offers that we feel you may be interested in about King's Cross generally.  Please uncheck this box if you object to receiving such information or offers.</p>
 <p style="text-align: left;">
