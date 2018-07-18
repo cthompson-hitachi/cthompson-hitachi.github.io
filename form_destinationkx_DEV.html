@@ -46,7 +46,7 @@
 	
 	<input type="hidden" id="web_sourcecode" name="web_sourcecode" readonly value="Destination KX">
 	<input type="hidden" id="web_destinationkx" name="web_destinationkx" readonly value="in">
-	<input type="hidden" id="web_kxfuturedevelopments" name="web_kxfuturedevelopments" readonly value="out">
+	<input type="hidden" id="web_kxproducts" name="web_kxproducts" readonly value="out">
 	<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="in">
 	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
 
@@ -75,9 +75,9 @@ By clicking the subscribe button, you agree to our <a href="https://www.kingscro
 	function changeValueCheckbox(element){
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
 	   if(element.checked){
-		document.getElementById("web_kxfuturedevelopments").value="in";	
+		document.getElementById("web_kxproducts").value="in";	
 	  }else{
-		document.getElementById("web_kxfuturedevelopments").value="out";
+		document.getElementById("web_kxproducts").value="out";
 	  }
 	}
 
