@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Test</title>
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6609154/683106/css/fonts.css">
+<link rel="stylesheet" href="/css/main.css" media="screen, projection"/>
+
+<style>
+	    .form__row { display: flex; }
+	    p { text-align: left !important; }
+	</style>
+</head>
+<body style="font-color:white;">
+<div class="container" style="margin-left: 0;background-color:#5D666F;">
+
+<div class="wrapper  wrapper--form  contact__wrapper" style="background-color:#5D666F;">
+<div class="wrapper--form__table-cell">
+<h1 style="color:white;">Destination KX Test Form (DEV)</h1>
+<form action="https://analytics-eu.clickdimensions.com/forms/h/aRi15D18gc0TC2j65u2OFA" method="post" class="contact__form   form">
+<div class="form__row  layout">
+
+	<div class="form__cell  layout__item  u-1/3-desk">
+	<input type="text" class="form__control" id="web_firstname" name="web_firstname" placeholder="Forename *" required/>
+	</div>
+	
+	<div class="form__cell  layout__item  u-1/2-desk">
+	<input type="text" class="form__control" id="web_lastname" name="web_lastname" placeholder="Surname *" required/>
+	</div>
+</div>
+
+<div class="form__row  layout">
+	<div class="form__cell  layout__item  u-1/2-desk">
+		<input type="email" class="form__control" id="initialEmail" name="initialEmail" placeholder="E-mail *" required onchange="changeEmailAddress(this)"/>
+	</div>
+	
+</div>
+
+<div class="form__row  layout">
+
+	
+	<input type="hidden" id="web_sourcecode" name="web_sourcecode" readonly value="Destination KX">
+	<input type="hidden" id="web_destinationkx" name="web_destinationkx" readonly value="in">
+	<input type="hidden" id="web_kxproducts" name="web_kxproducts" readonly value="out">
+	<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="in">
+	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
+
+</div>
+
+<div class="form__row  layout">
+<div class="form__cell  layout__item  form__submit-holder">
+<p class="form__footnote">* Required</p>
+<p style="text-align: left;color:white;">
+<input id="web_globaloptout" name="web_globaloptout" type="checkbox" unchecked onclick="changeValueCheckbox(this)" />
+
+We would like to email you in the future with information and offers that we feel you may be interested in about King's Cross generally.  Please uncheck this box if you object to receiving such information or offers.</p>
+<p style="text-align: left;color:white;">
+By clicking the subscribe button, you agree to our <a href="https://www.kingscross.co.uk/terms" class data-effect target="_blank">terms of use</a> and <a href="https://www.kingscross.co.uk/privacy-policy" class data-effect target="_blank">privacy policy</a>
+</p>
+<button class="btn btn--bold btn--bold--reg" type="submit">Subscribe</button>
+</div>
+<div class="form__cell  layout__item"></div>
+</div>
+</form>
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+	function changeValueCheckbox(element){
+	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
+	   if(element.checked){
+		document.getElementById("web_kxproducts").value="in";	
+	  }else{
+		document.getElementById("web_kxproducts").value="out";
+	  }
+	}
+
+	function changeEmailAddress(element){
+	// Transfer entered email address to web_emailaddress
+		document.getElementById("web_emailaddress").value = element.value;
+	}
+</script>
+<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" > </script> 
+<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/optout.js" > </script> 
+
+<script type="text/javascript"> 
+  var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com'); 
+  cdAnalytics.setAccountKey('an6POCKRq0uVtAt2R6sq3g'); 
+  cdAnalytics.setDomain('github.io'); 
+  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
+  var optOutHostId = 'agithubio_g3qs6R2tAtVu0qRKCOP6na'; 
+  cdAnalytics.optOutTracking(true); 
+</script>
+
+<script type="text/javascript"> 
+  var cdPriority = true; 
+</script> 
+<script type="text/javascript"> 
+  var cdCampaignKey = 'CMP-01005-ZBPTHS'; 
+</script> 
+</body>
+</html>
