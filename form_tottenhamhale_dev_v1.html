@@ -73,7 +73,7 @@
 <div class="form__row  layout">
 	<div class="form__cell  layout__item  u-1/2-desk">
 		<label for="potentialpurchaser" class="form__select-wrapper">
-			<select class="form__control" id="web_initialthpotentialpurchaser" name="web_initialthpotentialpurchaser" required onchange="change_potentialpurchaser(this)">
+			<select class="form__control" id="web_initialthpotentialpurchaser" name="web_initialthpotentialpurchaser" required onchange="changePotentialPurchaser(this)">
 				<option value>Please select*</option>
 				<option value="Yes">Yes, I'm interested!</option>
 				<option value="No">No, just send me marketing info</option>
@@ -113,7 +113,7 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	  }
 	}
 
-	function change_potentialpurchaser(element){
+	function changePotentialPurchaser(element){
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
 	   if(element.value="yes"){
 		document.getElementById("web_sourceofenquiry").value="Tottenham Hale Residential";
