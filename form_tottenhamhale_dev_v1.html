@@ -59,6 +59,7 @@
 <div class="form__row  layout">
 	
 	<input type="hidden" id="web_source_of_enquiry" name="web_source_of_enquiry" readonly value="Tottenham Hale Marketing Only">
+	<input type="hidden" id="web_thpotentialpurchaser" name="web_thpotentialpurchaser" readonly value="Tottenham Hale Marketing Only">
 	<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="out">
 	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
 
@@ -114,11 +115,11 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
 	   if(element.value="yes"){
 		document.getElementById("web_source_of_enquiry").value="Tottenham Hale Residential";
-		document.getElementById("web_initialthpotentialpurchaser").value="Yes";
+		document.getElementById("web_thpotentialpurchaser").value="Yes";
 		
 	  }else{
 		document.getElementById("web_source_of_enquiry").value="Tottenham Hale Marketing Only";
-		document.getElementById("web_initialthpotentialpurchaser").value="No";
+		document.getElementById("web_thpotentialpurchaser").value="No";
 	  }
 	}
 
