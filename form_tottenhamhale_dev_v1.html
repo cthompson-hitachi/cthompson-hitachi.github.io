@@ -66,7 +66,7 @@
 </div>
 
 <div class="form__row  layout">
-	<p style="text-align: left;">Are you interested in living at Tottenham Hale?<br><br></p> 
+	<p style="text-align: left;">Are you interested in living at Tottenham Hale?</p> 
 
 </div>
 
@@ -74,7 +74,7 @@
 	<div class="form__cell  layout__item  u-1/2-desk">
 		<label for="potentialpurchaser" class="form__select-wrapper">
 			<select class="form__control" id="web_initialthpotentialpurchaser" name="web_initialthpotentialpurchaser" required>
-				<option value>Please select</option>
+				<option value>Please select*</option>
 				<option value="Yes">Yes, I'm interested!</option>
 				<option value="No">No, just send me marketing info</option>
 			</select>
@@ -125,16 +125,6 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 	  }
 	}
 
-	function change_ar_futureprojects(element){
-	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
-	   if(element.checked){
-		document.getElementById("web_ar_futureprojects").value="in";
-		document.getElementById("web_globaloptouttext").value="in";
-	  }else{
-		document.getElementById("web_ar_futureprojects").value="out";
-	  }
-	}	
-	
 	function changeEmailAddress(element){
 	// Transfer entered email address to web_emailaddress
 		document.getElementById("web_emailaddress").value = element.value;
