@@ -58,9 +58,8 @@
 
 <div class="form__row  layout">
 	
-	<input type="hidden" id="web_sourcecode" name="web_sourcecode" readonly value="Tottenham Hale Marketing Only">
+	<input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="Tottenham Hale Marketing Only">
 	<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="out">
-	<input type="hidden" id="web_ar_futureprojects" name="web_ar_futureprojects" value="out">
 	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
 
 </div>
@@ -72,7 +71,7 @@
 
 <div class="form__row  layout">
 	<div class="form__cell  layout__item  u-1/2-desk">
-		<select class="form__control" id="web_thpotentialpurchaser" name="web_thpotentialpurchaser" required>
+		<select class="form__control" id="web_thpotentialpurchaser" name="web_thpotentialpurchaser" required onchange="change_web_thpotentialpurchaser(this)">
 			<option value>Please select</option>
 			<option value="Yes">Yes, I'm interested!</option>
 			<option value="No">No, just send me marketing info</option>
@@ -84,7 +83,7 @@
 <div class="form__cell  layout__item  form__submit-holder">
 <p class="form__footnote">* Required</p>
 <p style="text-align: left;">
-<input id="chk_ar_tottenhamhale" name="chk_ar_tottenhamhale" type="checkbox" unchecked onclick="change_ar_tottenhamhale(this)" />
+<input id="chk_tottenhamhale" name="chk_tottenhamhale" type="checkbox" unchecked onclick="change_tottenhamhale(this)" />
 
 We would like to email you in the future with information, offers, events and sales information that we feel you may be interested in about the Argent Related development at Tottenham Hale. Please check this box if you would like to receive such information.</p>
 <p style="text-align: left;">
@@ -102,23 +101,21 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 </div>
 <script type="text/javascript">
 
-	function change_ar_tottenhamhale(element){
+	function change_tottenhamhale(element){
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
 	   if(element.checked){
-		document.getElementById("web_ar_tottenhamhale").value="in";
 		document.getElementById("web_globaloptouttext").value="in";
 	  }else{
-		document.getElementById("web_ar_tottenhamhale").value="out";
+		document.getElementById("web_globaloptouttext").value="out";
 	  }
 	}
 
-	function change_ar_Marketing(element){
+	function change_web_thpotentialpurchaser(element){
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
 	   if(element.value="yes"){
-		document.getElementById("web_thpotentialpurchaser").value="Yes";
-		document.getElementById("web_globaloptouttext").value="in";
+		document.getElementById("web_sourceofenquiry").value="Tottenham Hale Residential";
 	  }else{
-		document.getElementById("web_thpotentialpurchaser").value="out";
+		document.getElementById("web_sourceofenquiry").value="Tottenham Hale Marketing Only";
 	  }
 	}
 
