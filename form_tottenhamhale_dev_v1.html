@@ -71,13 +71,18 @@
 </div>
 
 
-			<select class="form_control" id="web_initialthpotentialpurchaser" name="web_initialthpotentialpurchaser" required onchange="changePotentialPurchaser(this)">
-				<option value>Please select*</option>
-				<option value="Yes">Yes, I'm interested!</option>
-				<option value="No">No, just send me marketing info</option>
-			</select>
+<div class="form__row  layout">
+	<div class="form__cell  layout__item  u-1/2-desk">
+			<label for="salutation" class="form__select-wrapper">
+				<select class="form_control" id="web_initialthpotentialpurchaser" name="web_initialthpotentialpurchaser" required onchange="changePotentialPurchaser(this)">
+					<option value>Please select*</option>
+					<option value="Yes">Yes, I'm interested!</option>
+					<option value="No">No, just send me marketing info</option>
+				</select>
+			</label>
+	</div>
+</div>
 
-<p id="demo"></p>
 
 <div class="form__row  layout">
 <div class="form__cell  layout__item  form__submit-holder">
