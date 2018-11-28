@@ -57,17 +57,13 @@
 </div>
 
 <div class="form__row  layout">
-	
-	<input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="Tottenham Hale Marketing Only">
-	<input type="hidden" id="web_thpotentialpurchaser" name="web_thpotentialpurchaser" readonly value="No">
-	<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="out">
-	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
-
+	<div class="form__cell  layout__item  u-1/2-desk">
+		<input type="email" class="form__control" id="web_postcode" name="web_postcode" placeholder="E-mail *" required onchange="changeEmailAddress(this)"/>
+	</div>
 </div>
 
 <div class="form__row  layout">
 	<p style="text-align: left;">Are you interested in living at Tottenham Hale?</p> 
-
 </div>
 
 
@@ -83,6 +79,14 @@
 	</div>
 </div>
 
+<div class="form__row  layout">
+	
+	<input type="hidden" id="web_sourceofenquiry" name="web_sourceofenquiry" readonly value="Tottenham Hale Marketing Only">
+	<input type="hidden" id="web_thpotentialpurchaser" name="web_thpotentialpurchaser" readonly value="No">
+	<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="out">
+	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
+
+</div>
 
 <div class="form__row  layout">
 <div class="form__cell  layout__item  form__submit-holder">
