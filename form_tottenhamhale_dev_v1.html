@@ -67,13 +67,13 @@
 		<p style="text-align: left;">Are you interested in living at Tottenham Hale?</p> 
 	</div>
 	<div class="form__cell  layout__item  u-1/2-desk">
-			<label for="potentialpurchaser" class="form__select-wrapper">
-				<select class="form_control" id="web_initialthpotentialpurchaser" name="web_initialthpotentialpurchaser" required onchange="changePotentialPurchaser(this)">
-					<option value>Please select*</option>
-					<option value="Yes">Yes, I'm interested!</option>
-					<option value="No">No, just send me marketing info</option>
-				</select>
-			</label>
+		<label for="potentialpurchaser" class="form__select-wrapper">
+			<select class="form_control" id="web_initialthpotentialpurchaser" name="web_initialthpotentialpurchaser" required onchange="changePotentialPurchaser(this)">
+				<option value>Please select*</option>
+				<option value="Yes">Yes, I'm interested!</option>
+				<option value="No">No, just send me marketing info</option>
+			</select>
+		</label>
 	</div>
 </div>
 
@@ -133,7 +133,7 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 
 	function changeEmailAddress(element){
 	// Transfer entered email address to web_emailaddress
-		document.getElementById("web_emailaddress").value = element.value;
+		document.getElementById("web_emailaddress").value = "-" + element.value;
 	}
 	
 
