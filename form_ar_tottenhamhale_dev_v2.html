@@ -66,6 +66,7 @@
 	<input type="hidden" id="web_ar_futureprojects" name="web_ar_futureprojects" value="out">
 	<input type="hidden" id="web_ar_tottenhamhale" name="web_ar_tottenhamhale" value="out">
 	<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
+	<input type="hidden" id="web_ar_brentcrosssouth" name="web_ar_brentcrosssouth" value="out">
 
 </div>
 
@@ -75,8 +76,11 @@
 <p class="form__footnote">* Required</p>
 <p style="text-align: left;">
 <input id="chk_ar_tottenhamhale" name="chk_ar_tottenhamhale" type="checkbox" unchecked onclick="change_ar_tottenhamhale(this)" />
-
 We would like to email you in the future with information, offers, events and sales information that we feel you may be interested in about the Argent Related development at Tottenham Hale. Please check this box if you would like to receive such information.</p>
+<p style="text-align: left;">
+<input id="chk_ar_bcs" name="chk_ar_bcs" type="checkbox" unchecked onclick="change_ar_bcs(this)" />
+We would like to email you in the future with information, offers, events and sales information that we feel you may be interested in about the Argent Related development at Brent Cross South. Please check this box if you would like to receive such information.</p>
+
 <p style="text-align: left;">
 <input id="chk_ar_futureprojects" name="chk_ar_futureprojects" type="checkbox" unchecked onclick="change_ar_futureprojects(this)" />
 Please check this box if you would like to hear more about other Argent Related projects.
@@ -104,6 +108,17 @@ By clicking this button, you agree to our <a href="https://www.kingscross.co.uk/
 		document.getElementById("web_ar_tottenhamhale").value="out";
 	  }
 	}
+	
+	function change_ar_bcs(element){
+// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
+   if(element.checked){
+	document.getElementById("web_ar_brentcrosssouth").value="in";
+	document.getElementById("web_globaloptouttext").value="in";
+	}else{
+	document.getElementById("web_ar_brentcrosssouth").value="out";
+	}
+}
+
 
 	function change_ar_futureprojects(element){
 	// Pushes current checkbox state to a text field (ensures CRM is aware of both checkbox states - checked/unchecked)
