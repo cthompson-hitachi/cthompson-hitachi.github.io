@@ -3,8 +3,7 @@
 <html>
 <head>
 	<title>Form Test</title>
-	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6609154/683106/css/fonts.css">
-	<link rel="stylesheet" href="/css/main.css" media="screen, projection"/>
+
 	<style>
 			.form__row { display: flex; }
 			p { text-align: left !important; }
@@ -18,22 +17,18 @@
 					<h1>HISOL Anti-SPAM Test Form</h1>
 					<form action="https://analytics-eu.clickdimensions.com/forms/h/aWAv4qmkZEuyu2Fz4boG7Q" method="post" class="contact__form   form">
 						<div class="form__row  layout">
-
-							<label for="salutation" class="form__select-wrapper">
-
-							<input type="text" class="form__control" id="firstname" name="firstname" placeholder="Forename *" required/>
+							<input type="text"  id="firstname" name="firstname" placeholder="Forename *" required/>
 						</div>
 						<div class="form__row  layout">
-							<input type="text" class="form__control" id="lastname" name="lastname" placeholder="Surname *" required/>
+							<input type="text"  id="lastname" name="lastname" placeholder="Surname *" required/>
 						</div>
 						<div class="form__row  layout">
-							<input type="email" class="form__control" id="Email" name="Email" placeholder="E-mail *" required />
+							<input type="email"  id="Email" name="Email" placeholder="E-mail *" required />
 						</div>
 
-						<input type="hidden" id="web_globaloptouttext" name="web_globaloptouttext" value="in">
-						<input type="hidden" id="web_emailaddress" name="web_emailaddress"/>
-					
+						<input type="text" id="cd_ht_text" name="cd_ht_text" value="test" style="display:none;" />
 
+						
 						<div class="form__row  layout">
 							<div class="form__cell  layout__item  form__submit-holder">
 								<p style="text-align: left;">
@@ -59,5 +54,8 @@
 	  var optOutHostId = 'gitubio_3375lymxhsiEKWQMGwsdAa';
 	  cdAnalytics.optOutTracking(true);
 	</script>
+	
+
+
 </body>
 </html>
