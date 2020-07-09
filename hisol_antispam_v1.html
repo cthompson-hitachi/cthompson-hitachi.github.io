@@ -16,7 +16,7 @@
 			<div class="wrapper  wrapper--form  contact__wrapper">
 				<div class="wrapper--form__table-cell">
 					<h1>HISOL Anti-SPAM Test Form</h1>
-					<form action="http://analytics-eu.clickdimensions.com/forms/h/aWAv4qmkZEuyu2Fz4boG7Q" method="post" class="contact__form   form">
+					<form action="https://analytics-eu.clickdimensions.com/forms/h/aWAv4qmkZEuyu2Fz4boG7Q" method="post" class="contact__form   form">
 						<div class="form__row  layout">
 
 							<label for="salutation" class="form__select-wrapper">
@@ -48,13 +48,16 @@
 	</div>
 
 
-	<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js"> </script>
+	<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" > </script>
+	<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/optout.js" > </script>
+
 	<script type="text/javascript">
-			var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com');
-			cdAnalytics.setAccountKey('aAdswGMQWKEishxmyl5733');
-			cdAnalytics.setDomain('github.io');
-			cdAnalytics.setScore(typeof (cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore));
-			cdAnalytics.trackPage();
+	  var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com');
+	  cdAnalytics.setAccountKey('aAdswGMQWKEishxmyl5733');
+	  cdAnalytics.setDomain('github.io');
+	  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore));
+	  var optOutHostId = 'gitubio_3375lymxhsiEKWQMGwsdAa';
+	  cdAnalytics.optOutTracking(true);
 	</script>
 </body>
 </html>
