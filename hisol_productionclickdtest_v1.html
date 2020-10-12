@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HISOL Test Lead Form (Production)</title>
+
+	<style>
+			.form__row { display: flex; }
+			p { text-align: left !important; }
+		</style>
+</head>
+<body>
+
+	<h1>HISOL Test Lead Form (Production)</h1>
+	
+	<form action="https://analytics-eu.clickdimensions.com/forms/h/aqqSWf29Na0Km6oPNQSL6Z" method="post">
+
+		<input type="email" id="email" name="email" required />
+		<input type="text" id="firstname" name="firstname" required />
+		<input type="text" id="lastname" name="lastname" required />
+		<input type="text" id="telephonenumber" name="telephonenumber" required />
+		<input type="text" id="comments" name="comments" required />
+		
+		<input type="text" id="web_profession" name="web_profession" placeholder="Profession" style="display:none;" />
+
+		
+		<p style="text-align: left;">
+			<button type="submit">Submit</button>
+		</p>
+
+	</form>
+
+<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" > </script>
+
+<script type="text/javascript">
+  var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com');
+  cdAnalytics.setAccountKey('aJupLvbZRhkGFzicMIexzN');
+  cdAnalytics.setDomain('cthompson-hitachi.github.io');
+  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore));
+  cdAnalytics.trackPage();
+</script>
+	
+
+</body>
+</html>
